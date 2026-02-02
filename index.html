@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Portfolio de Nicolas Suarez - Software Developer especializado en desarrollo web moderno">
+    <meta name="author" content="Nicolas Esteban Suarez">
+    <title>Nicolas Suarez | Software Developer</title>
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+    <!-- NAVIGATION -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo" onclick="scrollToSection('hero')">NS</div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#hero" class="nav-link active" data-section="hero">Inicio</a></li>
+                <li><a href="#about" class="nav-link" data-section="about">Sobre Mí</a></li>
+                <li><a href="#experience" class="nav-link" data-section="experience">Experiencia</a></li>
+                <li><a href="#community" class="nav-link" data-section="community">Comunidad</a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="hero">
+        <div class="container">
+            <div class="hero-content">
+                <img src="YO.jpg" alt="Nicolas Suarez" class="hero-image">
+                <p class="hero-greeting">Hola, soy</p>
+                <h1 class="hero-title">Nicolas Esteban Suarez</h1>
+                <p class="hero-subtitle">
+                    <span id="typingText"></span>
+                    <span class="typing-cursor"></span>
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        <i class="fas fa-envelope"></i> Contáctame
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('about')">
+                        <i class="fas fa-user"></i> Conoce Más
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ABOUT SECTION -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about-content animate-on-scroll">
+                <div class="about-text">
+                    <h2>Sobre Mí</h2>
+                    <p>
+                        Soy un <strong>Software Developer</strong> con base en <strong>Buenos Aires, Argentina</strong>,
+                        especializado en el diseño y desarrollo de aplicaciones web modernas.
+                    </p>
+                    <p>
+                        Mi experiencia abarca múltiples paradigmas de programación, incluyendo
+                        <strong>Programación Orientada a Objetos</strong> y <strong>Programación Funcional</strong>,
+                        lo que me permite crear soluciones robustas y escalables.
+                    </p>
+                    <p>
+                        Cuento con formación intensiva en desarrollo web moderno, con enfoque en tecnologías
+                        de vanguardia y mejores prácticas de la industria. Actualmente me encuentro en la
+                        etapa final de mi formación académica.
+                    </p>
+                    <p>
+                        Apasionado por crear experiencias digitales excepcionales y resolver problemas complejos
+                        a través del código.
+                    </p>
+                </div>
+
+                <div class="skills-section">
+                    <h3 style="margin-bottom: 1.5rem;">Tecnologías & Herramientas</h3>
+                    <div class="skills-grid">
+                        <div class="skill-item">
+                            <div class="skill-icon">🐍</div>
+                            <div class="skill-name">Python</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">⚛️</div>
+                            <div class="skill-name">React</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">📱</div>
+                            <div class="skill-name">Angular</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">💻</div>
+                            <div class="skill-name">JavaScript</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🎨</div>
+                            <div class="skill-name">HTML/CSS</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🔧</div>
+                            <div class="skill-name">Git</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🗄️</div>
+                            <div class="skill-name">SQL</div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-icon">🚀</div>
+                            <div class="skill-name">Node.js</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EXPERIENCE SECTION -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Experiencia & Proyectos</h2>
+
+            <div class="grid grid-2 animate-on-scroll">
+                <!-- Project Card 1 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3 class="card-title">Desarrollo Web Full Stack</h3>
+                    <p class="card-description">
+                        Experiencia en el desarrollo de aplicaciones web completas, desde el diseño de interfaces
+                        de usuario hasta la implementación de lógica de backend y bases de datos.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">React</span>
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">Angular</span>
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">Python</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 2 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3 class="card-title">Automatización & Scripts</h3>
+                    <p class="card-description">
+                        Desarrollo de herramientas de automatización y scripts para optimizar procesos,
+                        incluyendo web scraping, procesamiento de datos y centralización de información.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">Python</span>
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">Selenium</span>
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">APIs</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 3 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3 class="card-title">Gestión de Datos</h3>
+                    <p class="card-description">
+                        Diseño e implementación de soluciones para el manejo eficiente de datos,
+                        incluyendo bases de datos relacionales y procesamiento de información.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">SQL</span>
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">PostgreSQL</span>
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">Data Analysis</span>
+                    </div>
+                </div>
+
+                <!-- Project Card 4 -->
+                <div class="card">
+                    <div class="card-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3 class="card-title">Diseño Responsivo</h3>
+                    <p class="card-description">
+                        Creación de interfaces modernas y responsivas que ofrecen una experiencia
+                        excepcional en todos los dispositivos y tamaños de pantalla.
+                    </p>
+                    <div style="margin-top: 1rem;">
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">HTML5</span>
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">CSS3</span>
+                        <span style="display: inline-block; padding: 0.3rem 0.8rem; background: rgba(100, 255, 218, 0.1); 
+                                     border-radius: 20px; font-size: 0.85rem; margin: 0.2rem;">UI/UX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- COMMUNITY SECTION -->
+    <section class="community" id="community">
+        <div class="container">
+            <div class="community-content animate-on-scroll">
+                <h2 style="text-align: center;">Comunidad</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 2rem;">
+                    Soy parte activa de <strong>Argentina Developer</strong>, una comunidad que creamos entre amigos
+                    apasionados por la tecnología y el desarrollo de software.
+                </p>
+
+                <img src="COMUNIDAD.jpg" alt="Argentina Developer Community" class="community-banner">
+
+                <div class="grid grid-3" style="margin-top: 3rem;">
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h3 class="card-title">Colaboración</h3>
+                        <p class="card-description">
+                            Trabajamos juntos en proyectos, compartimos conocimientos y nos ayudamos
+                            mutuamente a crecer profesionalmente.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h3 class="card-title">Innovación</h3>
+                        <p class="card-description">
+                            Exploramos nuevas tecnologías y tendencias en el mundo del desarrollo
+                            de software y TI.
+                        </p>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="card-title">Aprendizaje</h3>
+                        <p class="card-description">
+                            Fomentamos el aprendizaje continuo a través de workshops, charlas
+                            y proyectos colaborativos.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <h2 style="text-align: center; margin-bottom: 3rem;">Contacto</h2>
+
+            <div class="contact-container animate-on-scroll">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h3 style="margin-bottom: 1.5rem;">Hablemos</h3>
+                    <p style="margin-bottom: 2rem;">
+                        ¿Tienes un proyecto en mente o simplemente quieres conectar?
+                        No dudes en contactarme a través de cualquiera de estos medios.
+                    </p>
+
+                    <div class="contact-item" onclick="copyToClipboard('email')">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--color-text-primary);">Email</div>
+                            <div id="email" style="color: var(--color-text-secondary);">nicolas.esteban.suarez@hotmail.es</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item" onclick="copyToClipboard('phone')">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--color-text-primary);">Teléfono</div>
+                            <div id="phone" style="color: var(--color-text-secondary);">+(54) 9 11 5760-3290</div>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div>
+                            <div style="font-weight: 600; color: var(--color-text-primary);">Ubicación</div>
+                            <div style="color: var(--color-text-secondary);">Buenos Aires, Argentina</div>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 2rem;">
+                        <h4 style="margin-bottom: 1rem; color: var(--color-accent-cyan);">Redes Sociales</h4>
+                        <div class="social-links" style="justify-content: flex-start;">
+                            <a href="https://linkedin.com" target="_blank" class="social-link" title="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://github.com" target="_blank" class="social-link" title="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form">
+                    <form id="contactForm" onsubmit="handleFormSubmit(event)">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Nombre</label>
+                            <input type="text" id="name" class="form-input" placeholder="Tu nombre" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email-input" class="form-label">Email</label>
+                            <input type="email" id="email-input" class="form-input" placeholder="tu@email.com" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject" class="form-label">Asunto</label>
+                            <input type="text" id="subject" class="form-input" placeholder="Asunto del mensaje"
+                                required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message" class="form-label">Mensaje</label>
+                            <textarea id="message" class="form-textarea" placeholder="Tu mensaje aquí..."
+                                required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">
+                            <i class="fas fa-paper-plane"></i> Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/iamnicolas/" target="_blank" class="social-link" title="LinkedIn">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+            <a href="https://github.com/imnicolas" target="_blank" class="social-link" title="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="mailto:nicolas.esteban.suarez@hotmail.es" class="social-link" title="Email">
+                <i class="fas fa-envelope"></i>
+            </a>
+        </div>
+        <p style="color: var(--color-text-secondary); margin-bottom: 0.5rem;">
+            Diseñado y desarrollado por <strong style="color: var(--color-accent-cyan);">Nicolas Suarez</strong>
+        </p>
+        <p style="color: var(--color-text-muted); font-size: 0.9rem;">
+            © 2026 Todos los derechos reservados.
+        </p>
+    </footer>
+
+    <!-- SCROLL TO TOP BUTTON -->
+    <div class="scroll-top" id="scrollTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up" style="color: white; font-size: 1.2rem;"></i>
+    </div>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
